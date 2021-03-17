@@ -1,0 +1,72 @@
+/*Seletores de elementos*/
+
+h1, body, h3, p{
+   margin: 0;
+   color: white;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: normal;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, ol{
+    padding: 0;
+    list-style-type: none;
+}
+/*-----------------------------------------------*/
+/*perfil*/
+.capa{
+    background: url("https://i.imgur.com/HMmFSsX.jpg");
+    padding: 30px ;
+    background-size: cover;
+    
+}
+
+.foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    
+}
+
+.profissao{
+    font-size: 24px;
+}
+
+/*-----------------------------------------------*/
+
+.fundoTela{
+   
+    background: url("../assets/pagina/fundohomepage.jpg");
+   width: 100vw;
+   height: 100vh;
+   background-size: cover;/*CAPA, ou seja, ele vai estilizar as dimensoes maxima da foto*/
+}
+/*Coluna da Esquerda (Experiencias Profissionais)*/
+
+.col-esquerda img{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.col-esquerda li{
+   
+}
+
+/*-----------------------------------------------*/
+
+
