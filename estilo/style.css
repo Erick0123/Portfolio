@@ -7,14 +7,13 @@ h1, body, h3, p{
 
 h1{
     font-family: 'Playfair Display', serif;
-    font-size: 64px;
     font-weight: normal;
 }
 
 h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
-    font-size: 23px;
+    font-size: 22px; 
 }
 
 h3{
@@ -22,9 +21,6 @@ h3{
     font-weight: normal;
     font-size: 16px;
 }
-
-
-
 
 p{
     font-family: 'Open Sans', sans-serif;
@@ -52,8 +48,6 @@ nav{
     background-color:black;
 }
 
-
-/*-----------------------------------------------*/
 /*perfil*/
 .capa{
     background-image: url("https://i.imgur.com/jb0D3Wz.jpg");
@@ -61,15 +55,14 @@ nav{
 }
 
 .jumbotron{
-    height: 330px;
+    height: 205px;
 }
 
 .foto{
     width: 300px;
-    height: 300px;
+    height: 230px;
     border-radius: 50%;  
-    margin-top: -50px;  
-   
+    margin-top: -20%;  
 }
 
 .profissao{
@@ -79,6 +72,9 @@ nav{
 /*-----------------------------------------------*/
 
 /*Coluna da Esquerda (Experiencias Profissionais)*/
+.experiencia{
+    width: 30%;
+}
 
 .coluna-experiencia img{
     width: 50px;
@@ -101,7 +97,7 @@ nav{
 }
 
 .experiencia .linha{
-    width: 85%;
+    width: 85% ;
     border-color: rgba(250, 0, 0, 0.645);
 }
 /*Coluna da Esquerda (Formação)*/
@@ -123,8 +119,13 @@ nav{
 .card{
     border-radius: 20px;
     display: inline-block;
-    margin: 10px;
+    margin: 25px 10px;
     background-color: black;
+}
+
+.card p{
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .card h3{
@@ -135,4 +136,30 @@ nav{
 
 .modal-body{
     background-color: black;
+}
+
+/*Barra de progresso para as habilidade*/
+/* O @keyframes, serve para especificar uma animação que esta ocorrendo para o elemento.
+No caso ao lado ele esta carregando o elemento de 0 a 100*/
+@keyframes loading {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+.barra-progresso {
+    background: #E7E7E7;
+    position: relative;
+    height: 8px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 7%;
+}
+
+  .barra-progresso::after {
+    animation: loading 6s infinite ease-in-out;
+    background: #897FBA;
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
 }
