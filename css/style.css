@@ -108,14 +108,6 @@ nav{
 }
 
 /*Coluna da direita (habilidades)*/
-
-.habilidade h2{
-    font-size: 42px;
-}
-
-.habilidade button{
-    margin-top: -20px;
-}
 .card{
     border-radius: 20px;
     display: inline-block;
@@ -124,14 +116,8 @@ nav{
 }
 
 .card p{
-    padding: 12px;
-    border-radius: 8px;
-}
-
-.card h3{
-    font-weight: bold;
-    font-size: 32px;
-    
+    margin-left: -28px;
+    font-size: 15px;
 }
 
 .modal-body{
@@ -139,27 +125,31 @@ nav{
 }
 
 /*Barra de progresso para as habilidade*/
-/* O @keyframes, serve para especificar uma animação que esta ocorrendo para o elemento.
-No caso ao lado ele esta carregando o elemento de 0 a 100*/
-@keyframes loading {
-    from { width: 0 }
-    to { width: 100% }
+input{
+   margin-top: 20px;
+   margin-left: -100px;
+   display: 100px;
+   background-color: red;
+   /*opacity: 0;*/
 }
 
-
-.barra-progresso {
-    background: #E7E7E7;
-    position: relative;
-    height: 8px;
-    width: 100%;
+.barraProgresso{
+    margin-left: 10px;
+    margin-top: 8px;
     border-radius: 8px;
-    margin-top: 7%;
-}
+    height: 10px;
+    padding: 3px;
+    background-color: #ccc;
+    display: flex;
+    --progress:10;
+  }
 
-  .barra-progresso::after {
-    animation: loading 6s infinite ease-in-out;
-    background: #897FBA;
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-}
+  .barraProgresso::before{
+    content: "";
+    width: calc(var(--progress) * 1%);
+    transition: all 0.2s ease;
+    background-color:hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+    border-radius: 8px;
+
+  }
+  
