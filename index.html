@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleIndex.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="sortcut icon" href="assets/pagina/cara.png" type="image/png" />
 
     <title>Portfolio</title>
 
@@ -30,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse mt-1" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="sobre.html">Sobre mim</a>
+                <a class="nav-item nav-link" href="curriculo.html">Currículo</a>
                 <a class="nav-item nav-link" href="conquista.html">Conquistas</a>
             </div>
         </div>
@@ -211,7 +216,117 @@
                     </div>
                 </div>
 
+                <div>
+                    <h1>Projetos</h1>
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                        <!--Controls-->
+                        <div class="controls-top d-flex justify-content-center ">
+                            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                                    class="fa fa-chevron-circle-left fa-3x mr-3" aria-hidden="true"></i></a>
+                            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                                    class="fa fa-chevron-circle-right fa-3x ml-3" aria-hidden="true"></i></a>
+                        </div>
+                        <!--/.Controls-->
+
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                                <div class="col-sm-6" style="float:left">
+                                    <div class="card mb-2">
+                                        
+                                        <div class="card-body">
+                                            <h4 class="card-title"><img class="card-img-top btn-light" src="assets/pagina/blogpessoalogo.png" alt="Card image cap">Blog-Pessoal</h4>
+                                            <p class="card-text-center" >Este projeto foi criado durante o bootcamp <Span><a href="https://brazil.generation.org/">@GenerationBrasil</a></Span> para aprendermos como criar um site. No caso desse projeto, ele tem como finalidade criar postagens para pessoas logadas poderem ver e também postarem.<br> Somente o ADM pode criar e alterar temas.</p>
+
+                                            <div class="d-flex justify-content-center mt-4">
+                                                 <a class="btn btn-primary mr-4"
+                                                href="http://blog-pessoal-erickalan.herokuapp.com"
+                                                target="_blank">Site</a>
+                                                <a class="btn btn-primary"
+                                                href="https://github.com/Erick0123/Projeto-blogPessoal"
+                                                target="_blank">Repositório</a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6" style="float:left">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <h4 class="card-title"> <img class="card-img-top"
+                                                src="assets/pagina/image (1).png"
+                                                alt="Card image cap">They-Matter</h4>
+                                            <p class="card-text">Em grupo desenvolvemos, um ecommerce que visa atender institutos e ONGs de preservação de espécies que têm baixa visibilidade pela população e estão entrando em extinção. Com as vendas de nossos produtos, 50% de nossos lucros seriam para essas instituições.</p>
+                                            <div class="d-flex justify-content-center mt-4">
+                                                 <a class="btn btn-primary mr-4"
+                                                href="https://theymatter.herokuapp.com/inicio"
+                                                target="_blank">Site</a>
+                                                <a class="btn btn-primary"
+                                                href="https://github.com/Safe-Nature/They-Matter"
+                                                target="_blank">Repositório</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.First slide-->
+
+                            <!--Second slide-->
+                            <div class="carousel-item">
+                                <div class="col-sm-6" style="float:left">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><img class="card-img-top"
+                                                src="assets/pagina/mascara.png"
+                                                alt="Card image cap">Corona</h4>
+                                            <p class="card-text">Esse projeto foi feito em um curso super rápido chamado Fullstack Week, para aprimorar minhas habilidades como full-stack e ter minha primeira aplicação com React. O objetivo do site é a pessoa se cadastrar e mostrar se ela foi ou não vacinada.</p>
+                                                <div class="d-flex justify-content-center mt-4">
+                                                    <a class="btn btn-primary mr-4"
+                                                   href="http://blog-pessoal-erickalan.herokuapp.com"
+                                                   target="_blank">Site</a>
+                                                   <a class="btn btn-primary"
+                                                   href="https://github.com/Erick0123/Projeto-covid"
+                                                   target="_blank">Repositório</a>
+                                               </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6" style="float:left">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the
+                                                card's content.</p>
+                                                <div class="d-flex justify-content-center mt-4">
+                                                    <a class="btn btn-primary mr-4"
+                                                   href="http://blog-pessoal-erickalan.herokuapp.com"
+                                                   target="_blank">Site</a>
+                                                   <a class="btn btn-primary"
+                                                   href="https://github.com/Erick0123/Projeto-blogPessoal"
+                                                   target="_blank">Repositório</a>
+                                               </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Second slide-->
+                        </div>
+                        <!--/.Slides-->
+
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
+
             </div>
+
         </div>
     </div>
 
@@ -223,12 +338,16 @@
 
     <footer style="background: #1B3A64; padding-top: 20px;">
         <div class="container d-flex justify-content-center">
-            <a href="https://www.facebook.com/erick.alan.526" target="_blank"><img src="assets/contato/facebook.png" alt="meu Facebook"></a>
-            <a href="https://github.com/Erick0123" target="_blank"><img src="assets/contato/github.png" target="_blank" alt="meu Github" class="ml-5 mr-5"></a>
-            <a href="https://www.instagram.com/erick_alan__/?hl=pt-br" target="_blank"><img src="assets/contato/instagram.png" target="_blank" alt="meu Instagram"></a>
-            <a href="https://www.linkedin.com/in/erick-alan-7bb92b1b4/" target="_blank"><img src="assets/contato/linkedin.png" class="ml-5" alt="meu linkedin"></a>
+            <a href="https://www.facebook.com/erick.alan.526" target="_blank"><img src="assets/contato/facebook.png"
+                    alt="meu Facebook"></a>
+            <a href="https://github.com/Erick0123" target="_blank"><img src="assets/contato/github.png" target="_blank"
+                    alt="meu Github" class="ml-5 mr-5"></a>
+            <a href="https://www.instagram.com/erick_alan__/?hl=pt-br" target="_blank"><img
+                    src="assets/contato/instagram.png" target="_blank" alt="meu Instagram"></a>
+            <a href="https://www.linkedin.com/in/erick-alan-7bb92b1b4/" target="_blank"><img
+                    src="assets/contato/linkedin.png" class="ml-5" alt="meu linkedin"></a>
         </div>
-            <p class="text-center mt-2">Todos os direitos reservados: Erick Alan &copy;</p>
+        <p class="text-center mt-2">Todos os direitos reservados: &copy;2021Erick Alan</p>
     </footer>
 
 
