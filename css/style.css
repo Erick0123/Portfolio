@@ -108,6 +108,16 @@ nav{
     border-color: rgba(242, 255, 0, 0.645);
 }
 
+.curriculo .linha{
+    width: 34%;
+    border-color:rgba(131, 143, 143, 0.645);
+}
+
+.curriculo Span{
+    color: white;
+}
+
+
 /*Coluna da direita (habilidades)*/
 .card{
     border-radius: 20px;
@@ -131,7 +141,7 @@ input{
    margin-left: -100px;
    display: 100px;
    background-color: red;
-   opacity: 0;
+  opacity: 0;
 }
 
 
@@ -143,7 +153,7 @@ input{
     padding: 3px;
     background-color: #ccc;
     display: flex;
-    --progress:0;
+    --progress:50;
   }
 
   .barraProgresso::before{
@@ -154,5 +164,8 @@ input{
     border-radius: 8px;
 }
 
-
+.carousel-inner{
+    border-radius: 16px;
+    background-image:linear-gradient(to bottom, white, blue);
+}
   

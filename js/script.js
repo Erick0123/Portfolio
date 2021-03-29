@@ -17,10 +17,10 @@ let proatividade = document.querySelector('#proatividade')
 let comunicacao = document.querySelector('#comunicacao')
 let resiliencia = document.querySelector('#resiliencia')
 
-/*html.addEventListener('input', function(){
+html.addEventListener('input', function(){
     const value = html.value;
     barraProgresso.style.setProperty('--progress', value)
-})*/
+})
 
     html.addEventListener('input', function(){
         const value = html.value;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="css/styleIndex.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
@@ -35,8 +35,8 @@
         </button>
         <div class="collapse navbar-collapse mt-1" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="curriculo.html">Currículo</a>
-                <a class="nav-item nav-link" href="conquista.html">Conquistas</a>
+                <a class="nav-item nav-link" href="#habilidade">Habilidades</a>
+                <a class="nav-item nav-link" href="#projeto">Projetos</a>
             </div>
         </div>
     </nav>
@@ -59,7 +59,6 @@
     <div class="container-fluid">
         <!--Coluna de Experiencia------------------------------->
         <div class="row coluna-experiencia ml-2">
-
             <div class="col-sm-3 experiencia mb-5">
                 <h2 class="mt-5">Experiência Profissional</h2>
                 <div class="linha"></div>
@@ -75,8 +74,8 @@
                 </ul>
 
                 <!--Coluna de formação------------------------------->
-                <div class="formacao">
-                    <h2 class="mt-5">Formação</h2>
+                <div class="formacao mt-5">
+                    <h2>Formação</h2>
                     <div class="linha"></div>
                     <ul>
                         <li>
@@ -98,125 +97,138 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="curriculo mt-5">
+                    <h2>Currículo</h2>
+                    <div class="linha"></div>
+                    <div class="mt-3">
+                        <a href="assets/pagina/ErickAlan_Curriculo.docx" download="Acme Documentation (ver. 2.0.1).txt">
+                            <Span>
+                                <i class="fa fa-file-word-o fa-3x mr-2" aria-hidden="true"></i> Baixar arquivo</a>
+                        </Span>
+                    </div>
+                </div>
             </div>
 
             <!--Coluna da direita habilidades-->
-            <div class="col-md-9 habilidade">
-                <h1>Habilidades</h1>
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Front</h3>
-                        <div class="linha"></div>
-                        <div class="col-sm-1">
-                            <ul>
-                                <li>
-                                    <p class="titulo">HTML5
-                                    <p class="col-sm-8 ml-3 barraProgresso"></p>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="html">
-                                </li>
-                                <li>
-                                    <p>CSS3
-                                    <div class="col-sm-8 ml-3 barraProgresso btn-danger "></div>
-                                    </p>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="css">
-                                </li>
-                                <li>
-                                    <p>JavaScript
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="javaScript">
-                                </li>
-                                <li>
-                                    <p>Angular
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="angular">
-                                </li>
-                                <li>
-                                    <p>TypeScript
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="typeScript">
-                                </li>
+            <div class="col-md-9">
+                <div class="habilidade" id="habilidade">
+                    <h1>Habilidades</h1>
+                    <div class="card" style="width: 19rem;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Front</h3>
+                            <div class="linha"></div>
+                            <div class="col-sm-1">
+                                <ul>
+                                    <li>
+                                        <p class="titulo">HTML5
+                                        <p class="col-sm-8 ml-3 barraProgresso"></p>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="html">
+                                    </li>
+                                    <li>
+                                        <p>CSS3
+                                        <div class="col-sm-8 ml-3 barraProgresso btn-danger "></div>
+                                        </p>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="css">
+                                    </li>
+                                    <li>
+                                        <p>JavaScript
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="javaScript">
+                                    </li>
+                                    <li>
+                                        <p>Angular
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="angular">
+                                    </li>
+                                    <li>
+                                        <p>TypeScript
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="typeScript">
+                                    </li>
 
-                            </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 21rem;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Back</h3>
+                            <div class="linha"></div>
+                            <div class="col-sm-1">
+                                <ul>
+                                    <li>
+                                        <p>Spring
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="spring">
+                                    </li>
+                                    <li>
+                                        <p>MySql
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="mysql">
+                                    </li>
+                                    <li>
+                                        <p>Orientação à objetos
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="objeto">
+                                    </li>
+                                    <li>
+                                        <p>Lógica de programação
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="logica">
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card" style="width: 21rem;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Soft skills</h3>
+                            <div class="linha"></div>
+                            <div class="col-sm-1 ">
+                                <ul>
+                                    <li>
+                                        <p>Trabalho em Equipe
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="equipe">
+                                    </li>
+                                    <li>
+                                        <p>Proatividade
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="proatividade">
+                                    </li>
+                                    <li>
+                                        <p>Comunicação
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="comunicacao">
+                                    </li>
+                                    <li>
+                                        <p>Resiliência
+                                        <div class="col-sm-8 ml-3 barraProgresso"></div>
+                                        </p>
+                                        <input type="range" min="0" max="100" step="1" value="0" id="resiliencia">
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="card" style="width: 21rem;">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Back</h3>
-                        <div class="linha"></div>
-                        <div class="col-sm-1">
-                            <ul>
-                                <li>
-                                    <p>Spring
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="spring">
-                                </li>
-                                <li>
-                                    <p>MySql
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="mysql">
-                                </li>
-                                <li>
-                                    <p>Orientação à objetos
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="objeto">
-                                </li>
-                                <li>
-                                    <p>Lógica de programação
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="logica">
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="card" style="width: 21rem;">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Soft skills</h3>
-                        <div class="linha"></div>
-                        <div class="col-sm-1 ">
-                            <ul>
-                                <li>
-                                    <p>Trabalho em Equipe
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="equipe">
-                                </li>
-                                <li>
-                                    <p>Proatividade
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="proatividade">
-                                </li>
-                                <li>
-                                    <p>Comunicação
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="comunicacao">
-                                </li>
-                                <li>
-                                    <p>Resiliência
-                                    <div class="col-sm-8 ml-3 barraProgresso"></div>
-                                    </p>
-                                    <input type="range" min="0" max="100" step="1" value="0" id="resiliencia">
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div>
+                <!--Coluna de projetos-->
+                <div id="projeto">
                     <h1>Projetos</h1>
                     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -230,25 +242,34 @@
                         <!--/.Controls-->
 
                         <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner p-2" role="listbox">
                             <!--First slide-->
                             <div class="carousel-item active">
                                 <div class="col-sm-6" style="float:left">
                                     <div class="card mb-2">
-                                        
+
                                         <div class="card-body">
-                                            <h4 class="card-title"><img class="card-img-top btn-light" src="assets/pagina/blogpessoalogo.png" alt="Card image cap">Blog-Pessoal</h4>
-                                            <p class="card-text-center" >Este projeto foi criado durante o bootcamp <Span><a href="https://brazil.generation.org/">@GenerationBrasil</a></Span> para aprendermos como criar um site. No caso desse projeto, ele tem como finalidade criar postagens para pessoas logadas poderem ver e também postarem.<br> Somente o ADM pode criar e alterar temas.</p>
+                                            <h4 class="card-title">
+                                                <img class="card-img-top btn-light"
+                                                    src="assets/pagina/blogpessoalogo.png"
+                                                    alt="Card image cap">Blog-Pessoal
+                                            </h4>
+                                            <p class="card-text-center">Este projeto foi criado durante o bootcamp
+                                                <Span><a
+                                                        href="https://brazil.generation.org/">@GenerationBrasil</a></Span>
+                                                para aprendermos como criar um site. No caso desse projeto, ele tem como
+                                                finalidade criar postagens para pessoas logadas poderem ver e também
+                                                postarem.<br> Somente o ADM pode criar e alterar temas.</p>
 
                                             <div class="d-flex justify-content-center mt-4">
-                                                 <a class="btn btn-primary mr-4"
-                                                href="http://blog-pessoal-erickalan.herokuapp.com"
-                                                target="_blank">Site</a>
+                                                <a class="btn btn-primary mr-4"
+                                                    href="http://blog-pessoal-erickalan.herokuapp.com"
+                                                    target="_blank">Site</a>
                                                 <a class="btn btn-primary"
-                                                href="https://github.com/Erick0123/Projeto-blogPessoal"
-                                                target="_blank">Repositório</a>
+                                                    href="https://github.com/Erick0123/Projeto-blogPessoal"
+                                                    target="_blank">Repositório</a>
                                             </div>
-                                           
+
                                         </div>
                                     </div>
                                 </div>
@@ -257,16 +278,19 @@
                                     <div class="card mb-2">
                                         <div class="card-body">
                                             <h4 class="card-title"> <img class="card-img-top"
-                                                src="assets/pagina/image (1).png"
-                                                alt="Card image cap">They-Matter</h4>
-                                            <p class="card-text">Em grupo desenvolvemos, um ecommerce que visa atender institutos e ONGs de preservação de espécies que têm baixa visibilidade pela população e estão entrando em extinção. Com as vendas de nossos produtos, 50% de nossos lucros seriam para essas instituições.</p>
+                                                    src="assets/pagina/image (1).png" alt="Card image cap">They-Matter
+                                            </h4>
+                                            <p class="card-text">Em grupo desenvolvemos, um ecommerce que visa atender
+                                                institutos e ONGs de preservação de espécies que têm baixa visibilidade
+                                                pela população e estão entrando em extinção. Com as vendas de nossos
+                                                produtos, 50% de nossos lucros seriam para essas instituições.</p>
                                             <div class="d-flex justify-content-center mt-4">
-                                                 <a class="btn btn-primary mr-4"
-                                                href="https://theymatter.herokuapp.com/inicio"
-                                                target="_blank">Site</a>
+                                                <a class="btn btn-primary mr-4"
+                                                    href="https://theymatter.herokuapp.com/inicio"
+                                                    target="_blank">Site</a>
                                                 <a class="btn btn-primary"
-                                                href="https://github.com/Safe-Nature/They-Matter"
-                                                target="_blank">Repositório</a>
+                                                    href="https://github.com/Safe-Nature/They-Matter"
+                                                    target="_blank">Repositório</a>
                                             </div>
                                         </div>
                                     </div>
@@ -280,17 +304,19 @@
                                     <div class="card mb-2">
                                         <div class="card-body">
                                             <h4 class="card-title"><img class="card-img-top"
-                                                src="assets/pagina/mascara.png"
-                                                alt="Card image cap">Corona</h4>
-                                            <p class="card-text">Esse projeto foi feito em um curso super rápido chamado Fullstack Week, para aprimorar minhas habilidades como full-stack e ter minha primeira aplicação com React. O objetivo do site é a pessoa se cadastrar e mostrar se ela foi ou não vacinada.</p>
-                                                <div class="d-flex justify-content-center mt-4">
-                                                    <a class="btn btn-primary mr-4"
-                                                   href="http://blog-pessoal-erickalan.herokuapp.com"
-                                                   target="_blank">Site</a>
-                                                   <a class="btn btn-primary"
-                                                   href="https://github.com/Erick0123/Projeto-covid"
-                                                   target="_blank">Repositório</a>
-                                               </div>
+                                                    src="assets/pagina/mascara.png" alt="Card image cap">Corona</h4>
+                                            <p class="card-text">Esse projeto foi feito em um curso super rápido chamado
+                                                Fullstack Week, para aprimorar minhas habilidades como full-stack e ter
+                                                minha primeira aplicação com React. O objetivo do site é a pessoa se
+                                                cadastrar e mostrar se ela foi ou não vacinada.</p>
+                                            <div class="d-flex justify-content-center mt-4">
+                                                <a class="btn btn-primary mr-4"
+                                                    href="http://blog-pessoal-erickalan.herokuapp.com"
+                                                    target="_blank">Site</a>
+                                                <a class="btn btn-primary"
+                                                    href="https://github.com/Erick0123/Projeto-covid"
+                                                    target="_blank">Repositório</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -305,14 +331,14 @@
                                             <p class="card-text">Some quick example text to build on the card title and
                                                 make up the bulk of the
                                                 card's content.</p>
-                                                <div class="d-flex justify-content-center mt-4">
-                                                    <a class="btn btn-primary mr-4"
-                                                   href="http://blog-pessoal-erickalan.herokuapp.com"
-                                                   target="_blank">Site</a>
-                                                   <a class="btn btn-primary"
-                                                   href="https://github.com/Erick0123/Projeto-blogPessoal"
-                                                   target="_blank">Repositório</a>
-                                               </div>
+                                            <div class="d-flex justify-content-center mt-4">
+                                                <a class="btn btn-primary mr-4"
+                                                    href="http://blog-pessoal-erickalan.herokuapp.com"
+                                                    target="_blank">Site</a>
+                                                <a class="btn btn-primary"
+                                                    href="https://github.com/Erick0123/Projeto-blogPessoal"
+                                                    target="_blank">Repositório</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -324,16 +350,11 @@
                     </div>
                     <!--/.Carousel Wrapper-->
                 </div>
-
             </div>
-
         </div>
     </div>
 
-
-
-
-
+    <hr>
 
 
     <footer style="background: #1B3A64; padding-top: 20px;">
