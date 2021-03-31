@@ -136,33 +136,25 @@ nav{
 }
 
 /*Barra de progresso para as habilidade*/
-input{
-   margin-top: 20px;
-   margin-left: -100px;
-   display: 100px;
-   background-color: red;
-  opacity: 0;
-}
 
 
 
-.barraProgresso{
-    margin-top: 8px;
+
+.progress{
+    margin-top: 7px;
     border-radius: 8px;
-    height: 10px;
-    padding: 3px;
+    height: 12px;
     background-color: #ccc;
     display: flex;
-    --progress:50;
+    width: 100%;
+    
   }
 
-  .barraProgresso::before{
-    content: "";
-    width: calc(var(--progress) * 1%);
-    transition: all 0.2s ease;
-    background-color:hsl( calc(var(--progress) * 1.2) , 80%, 50%);
-    border-radius: 8px;
-}
+  .progress span{
+      color:rgb(44, 37, 37);
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+  }
 
 .carousel-inner{
     border-radius: 16px;
