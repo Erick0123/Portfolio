@@ -41,11 +41,12 @@ body{
     background-attachment: fixed;
     background: url("https://i.imgur.com/Q6R7bpt.jpg");
     background-size: cover;
-    
+    margin: 0;
 }
 
 nav{
     background-color:black;
+    
 }
 
 /*perfil*/
@@ -62,7 +63,7 @@ nav{
     width: 300px;
     height: 230px;
     border-radius: 50%;  
-    margin-top: -20%;  
+     
 }
 
 .profissao{
@@ -119,6 +120,9 @@ nav{
 
 
 /*Coluna da direita (habilidades)*/
+.habilidades{
+    
+}
 .card{
     border-radius: 20px;
     display: inline-block;
@@ -136,9 +140,6 @@ nav{
 }
 
 /*Barra de progresso para as habilidade*/
-
-
-
 
 .progress{
     margin-top: 7px;
